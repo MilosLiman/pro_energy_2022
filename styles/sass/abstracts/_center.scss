@@ -1,0 +1,6 @@
+@mixin center($cont) {
+    display: flex;
+    justify-content: $cont;
+    align-items: center;
+    text-align: center;
+}

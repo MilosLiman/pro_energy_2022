@@ -1,0 +1,100 @@
+.btn{
+    background: $red;
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 1.4rem 3.3rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include md{
+        width: auto;
+    }
+
+    &--center{
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    &--md-left{
+
+        @include md{
+        margin: 0 !important;
+        }
+    }
+
+    &--md-right{
+        @include md{
+            position: absolute;
+            right: 0;
+            bottom: 0;  
+        } 
+    } 
+
+    &--white{
+        background-color: $white;
+        color: $brick;
+    }
+
+    &--arrow{
+
+        &--blue{
+            background-color: $blue;
+        }
+
+
+        &::after{
+            content: url("./img/icon-arrow-right.svg");
+            position: relative;
+            top: .2rem;
+            padding-left: .5rem;
+            transition: all 350ms ease;
+        }
+
+        &:hover{
+
+            background-color: $red_d;
+            
+            &::after{
+                padding-left: 1rem;
+
+            }
+        }
+
+    }
+
+    &--arrow2{
+
+        &--brick{
+            background-color: $brick;
+        }
+
+
+        &::after{
+            content: url("./img/icon-arrow-right-brick.svg");
+            position: relative;
+            top: .2rem;
+            padding-left: .5rem;
+            transition: all 350ms ease;
+
+        }
+
+        &:hover{
+
+            background-color: $dark_silver;
+
+            
+            &::after{
+                padding-left: 1rem;
+
+            }
+        }
+
+    }
+}

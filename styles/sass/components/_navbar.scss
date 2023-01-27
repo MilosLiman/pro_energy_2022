@@ -1,0 +1,187 @@
+@import '../abstracts/center';
+@import 'breakpoints';
+@import 'btn';
+
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 1rem;
+    width: 100%;
+    background: $white;
+
+    &__items{
+        @include center(space-between);
+
+
+        &__logo{
+            width: 20rem;
+            z-index: 100;
+        }
+
+        &__hamburger{
+            cursor: pointer;
+            z-index: 100;
+    
+                #closeBtn{
+                    display: none;
+                }
+        }
+    }
+
+    &__menu{
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: #fff;
+        padding-top: 10rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    &__item{
+        padding: 1.2rem 1rem;
+
+            &:nth-child(-n+5){
+                border-bottom: 1px solid $light_gray_t;
+            }
+
+            a{
+                font-size: 1.8rem;
+                color: $light_gray;
+                font-weight: 700;
+    
+                i{
+                    position: absolute;
+                    right: .5rem;
+                    font-size: 1.8rem;
+                    color: $light_gray;
+                    vertical-align: center;
+                }
+
+                
+            }
+
+            &__dropdown-content,
+            &__dropdown-content2 {
+                position: fixed;
+                margin: 0;
+                top: calc(var(--header-height) + 1rem);
+                padding: .5rem 1.5rem;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                display: none;
+        
+                li{
+                    margin: .5rem 0;
+                }
+            }
+
+    &__dropdown{
+        position: relative;
+
+        }
+    }
+    }
+
+    .active{
+        transform: translateY(0);
+    }
+
+    .show{
+        display: block;
+    }
+
+    .remove{
+        display: none;
+    }
+
+    .drop-show{
+        display: block !important;
+        position: relative !important;
+        box-shadow: none !important;
+    }
+
+    .navIcon-move{
+        transform: rotate(180deg);
+    }
+
+
+    @include lg{
+
+        border-bottom: 1px solid $light_gray_t;
+        @include center(space-around);
+        
+        &__items__hamburger{
+            display: none;
+        }
+
+        &__menu {
+            display: flex;
+            position: relative;
+            padding: 1rem;
+            transform: none;
+            
+            &__item {
+            margin: 0 1rem;
+            padding: 1.4rem 0;
+
+                a{
+                    font-size: 1.6rem;
+
+                    i{
+                        position: inherit;
+                        font-size: 1rem;
+                        color: $brick;
+                        vertical-align: .3rem;
+                    }
+
+                    &:hover .expand{
+                        transform: rotate(180deg);
+                    }
+                }
+
+                &:nth-child(n){
+                    border-bottom: none;
+                }
+            }
+        
+
+        &__dropdown{
+            position: relative;
+
+
+            &:hover .dropdown-content,
+            &:hover .dropdown-content2{
+                    position: absolute;
+                    display: inline-block;
+                    background: $silver;
+                    top: 1rem;
+                    left: -1rem;
+                    margin: 0;
+                    padding-top: .5rem;
+                    padding-left: 1.2rem;
+                    margin-top: 3rem;
+                    box-shadow: 15px 17px 19px -23px $black;
+                    overflow: hidden;
+
+            
+                li{
+                    a{
+                        overflow: hidden;
+                        font-size: 1.2rem;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+
+                    }
+                }
+            }
+        }
+    }
+    }
+}

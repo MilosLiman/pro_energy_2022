@@ -1,0 +1,183 @@
+@import 'colors';
+@import '../components/breakpoints';
+
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 400;
+
+    &.pe-title{
+        position: relative;
+        padding-top: 2rem;
+        
+        @include sm{
+            font-size: 4rem;
+        }
+
+        @include md{
+            padding-top: 3rem;
+        }
+
+        @include lg{
+            font-size: 4.6rem;
+        }
+
+        &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 11rem;
+            height: 1rem;
+            border-radius: 1rem;
+        }
+
+        &--center{
+            text-align: center;
+
+
+            &::before{
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%, -50%);
+            }
+    
+            @include lg{
+                margin-top: 5rem;
+            }
+        }
+
+        &--blue{
+
+            &::before{
+                background-color: $blue;
+
+            }
+        }
+
+        &--white{
+
+            &::before{
+                background-color: $white;
+
+            }
+        }
+
+        &--gray{
+            &::before{
+            background-color: $light_gray;
+            }
+
+        }
+
+        &--dark_silver{
+            &::before{
+            background-color: $dark_silver;
+            }
+        }
+    }
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 500;
+    color: $light_gray;
+}
+
+h4{
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    font-weight: 500;
+
+}
+
+h5{
+    font-size: 1.4rem;
+}
+
+img{
+    width: 100%;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background: $bckg;
+}
+
+button{
+    border: none;
+    background: transparent;
+}
+
+.container{
+    padding: 2rem 10rem;
+}
+
+.line{
+    background: $blue;
+    width: 11rem;
+    height: 1rem;
+    border-radius: 3rem;
+    margin-bottom: 2rem;
+
+    @include xl{
+        margin-bottom: 3rem;
+    }
+}
+
+.v-line{
+    background: $brick;
+    width: 1rem;
+    height: 6rem;
+    border-radius: 3rem;
+}
+
+.v-black{
+    background: $black;
+}
+
+.v-blue{
+    background: $blue;
+}
+
+.v-teal{
+    background: $teal;
+}
+
+.v-silver{
+    background: $silver;
+}
+
+.bold{
+    font-weight: 800;
+    color: $brick;
+}
+

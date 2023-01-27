@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProEnergy</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./styles/img/logo-part.png">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- putanja do css fajla dobijenog preko GULP-a -->
+    <!-- ne ucitava neke svg objekte, ostalo sve radi -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    
+</head>
+<body>
+    
+    <section class="header">
+        <div class="header__items">
+            <div class="header__items__logo">
+                <a href="#"><img src="styles/img/logo.png" alt=""></a>
+            </div>
+            <button class="header__items__hamburger">
+                <span class="menu" id="menuBtn"></span>
+                <span class="close" id="closeBtn"></span>
+            </button>
+        </div>
+        <div class="header__navbar">
+            <ul class="header__menu">
+                <li class="header__menu__item"><a href="#">Our Group</a></li>
+                <li class="header__menu__item header__menu__dropdown">
+                    <a href="#" class="drop">Our Divisions <span class="expand" id="expand1"></span></a>
+                    <ul class="header__menu__item__dropdown-content dropdown-content" id="dropdown-content">
+                        <li><a href="#">Our Operations Structure</a></li>
+                        <li><a href="#">Water Division</a></li>
+                        <li><a href="#">Transport Division</a></li>
+                        <li><a href="#">Telecom Division</a></li>
+                        <li><a href="#">Energy Division</a></li>
+                        <li><a href="#">Plant & Fleet Solutions</a></li>
+                    </ul>
+                </li>
+                <li class="header__menu__item"><a href="#">Our People</a></li>
+                <li class="header__menu__item header__menu__dropdown">
+                    <a href="#" class="drop2">Investors <span class="expand" id="expand2"></span></a>
+                    <ul class="header__menu__item__dropdown-content2 dropdown-content2" id="dropdown-content2">
+                        <li><a href="#">Our Investment Strategy</a></li>
+                        <li><a href="#">IR Contracts</a></li>
+                        <li><a href="#">Tax Strategy</a></li>
+                        <li><a href="#">Sector Analysis</a></li>
+                        <li><a href="#">Annual Reports</a></li>
+                    </ul>
+                </li>
+                <li class="header__menu__item"><a href="#">Our News</a></li>
+                <li class="header__menu__item"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero__img">
+            <img src="./styles/img/worker.png" alt="worker" class="heroImg">
+        </div>
+            <div class="hero__content">
+                <div class="line"></div>
+                <h1>Delivering essential infrastructure services</h1>
+                <h4>We deliver a range of essential infrastructure services within  water, energy, transport and telecommunication in the Europe.</h4>
+                <button class="btn btn--arrow btn--center btn--md-left">Find out more</button>
+            </div>
+    </section>
+
+    <section class="division">
+        <div class="division__content">
+            <h2 class="pe-title pe-title--white">What we do</h2>
+            <h4 class="division__content__t1">Donec lobortis at orci eu iaculis. Sed nisl nunc, aliquam lacinia luctus id, scelerisque.</h4>
+            <h4>Aliquam auctor bibendum erat, in sagittis dui iaculis in.</h4>
+            <button class="btn btn--arrow btn--center btn--md-left">Discover our divisions</button>
+        </div>
+        <div class="division__content2">
+            <div class="division__content2__img">
+                <img src="./styles/img/workers.png" alt="workers" class="divisionImg">
+            </div>
+            <div class="division__subcontent">
+                <div class="division__subcontent__item">
+                    <div class="v-line"></div>
+                    <h3 class="bold">ProEnergy</h3>
+                    <h3>Energy Division</h3>
+                </div>
+                <div class="division__subcontent__item">
+                    <div class="v-line v-black"></div>
+                    <h3 class="bold">ProEnergy</h3>
+                    <h3>Plant & Fleet Solutions</h3>
+                </div>
+                <div class="division__subcontent__item">
+                    <div class="v-line v-blue"></div>
+                    <h3 class="bold">ProEnergy</h3>
+                    <h3>Water Division</h3>
+                </div>
+                <div class="division__subcontent__item">
+                    <div class="v-line v-teal"></div>
+                    <h3 class="bold">ProEnergy</h3>
+                    <h3>Transport Division</h3>
+                </div>
+                <div class="division__subcontent__item">
+                    <div class="v-line v-silver"></div>
+                    <h3 class="bold">ProEnergy</h3>
+                    <h3>Telecom Division</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="esg">
+            <h2 class="pe-title pe-title--gray pe-title--center">ESG Stats</h2>
+            <div class="esg__items">
+                <div class="esg__item">
+                    <p>Used</p>
+                    <div class="esg__item__nums">
+                        <h1 class="esg__item__numb">83</h1>
+                        <span class="esg__item__percent">%</span>
+                    </div>
+                    <p>renewable energy</p>
+                </div>
+                <div class="esg__item">
+                    <p>Recovered</p>
+                    <div class="esg__item__nums">
+                        <h1 class="esg__item__numb">77</h1>
+                        <span class="esg__item__percent">%</span>
+                    </div>
+                    <p>of waste to avoid landfill</p>
+                </div>
+                <div class="esg__item">
+                    <p>Recorded over</p>
+                    <div class="esg__item__nums">
+                        <h1 class="esg__item__numb">15,000</h1>
+                    </div>
+                    <p>electrical vehicle miles</p>
+                </div>
+            </div>
+            <h4>Donec lobortis at orci eu iaculis. Sed nisl nunc, aliquam lacinia luctus id, scelerisque.</h4>
+            <button class="btn btn--arrow btn--center">Find out more</button>
+    </section>
+    <section class="feedbacks">
+        <div class="feedbacks__container">
+        <div class="feedbacks__content">
+            <h2 class="pe-title pe-title--dark_silver">What our people say</h2>
+            <h4>As a Group we recognise that engaging and empowering our people to deliver and grow is pivotal to driving our business and achieving continued success.</h4>
+            <button class="btn btn--arrow2 btn--white btn--center btn--md-left">Hear our people`s views</button>
+        </div>
+        <div class="feedbacks__quote-box">
+            <div class="feedbacks__quote-box__quote">
+                <div class="feedbacks__quote-box__quote__left">
+                    <img src="./styles/img/quoteup.png" alt="" class="q">
+                    <img src="./styles/img/quoteup.png" alt="" class="q">
+                </div>
+                <div class="feedbacks__quote-box__quote__main">
+                    <div class="quote-text">
+                        <h3 id="quote">Sed dignissim placerat dolor id maxim. Nullam gravida bibendum ipsum, a consequat neque venenatis et.</h3>
+                    </div>
+                </div>
+                <div class="feedbacks__quote-box__quote__right">
+                    <img src="./styles/img/quotedown.png" alt="" class="q">
+                    <img src="./styles/img/quotedown.png" alt="" class="q">
+                </div>
+            </div>
+            <div class="feedbacks__customer-box customer">
+                <img src="./styles/img/customer.png" alt="" id="img" class="customerImg">
+                <div class="feedbacks__customer-box__content">
+                    <p><span id="text1">Orci varius natoque</span></p>
+                    <p id="text2">Magnis dis parturient montes</p>
+                </div>
+            </div>
+            <div class="feedbacks__box-slider">
+                <button class="left-arrow">
+                    <svg class="arrow arrow--left arrow-l inactive-a" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 0.640625L27.3594 14L14 27.3594L11.6562 25.0156L20.9531 15.6406H0.640625V12.3594H20.9531L11.6562 2.98438L14 0.640625Z" fill="#3EA397"/>
+                    </svg>                        
+                </button>
+                <div class="feedbacks__box-slider__circles-box">
+                    <span class="bullet">
+                        <svg class="circle-svg active-svg" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="circle active" opacity="0.5" r="6.5" transform="matrix(1 0 0 -1 6.5 7)" fill="#E73137"/>
+                        </svg>
+                    </span>
+                    <span class="bullet">
+                        <svg class="circle-svg" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="circle" opacity="0.5" r="6.5" transform="matrix(1 0 0 -1 6.5 7)" fill="#E73137"/>
+                        </svg>
+                    </span>
+                    <span class="bullet">
+                        <svg class="circle-svg" width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="circle" opacity="0.5" r="6.5" transform="matrix(1 0 0 -1 6.5 7)" fill="#E73137"/>
+                        </svg>
+                    </span>
+                </div>
+                <button class="right-arrow">
+                    <svg class="arrow arrow-r" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 0.640625L27.3594 14L14 27.3594L11.6562 25.0156L20.9531 15.6406H0.640625V12.3594H20.9531L11.6562 2.98438L14 0.640625Z" fill="#3EA397"/>
+                    </svg>                        
+                </button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="core">
+        <h2 class="pe-title pe-title--gray pe-title--center">Core capabilities</h2>
+        <div class="core__box">
+           <div class="core__box__item core-item">
+            <div class="core__box__item__title item-title">
+                <h4>Water</h4>
+                <button class="coreBtns">
+                    <span class="plus"></span>
+                    <span class="minus up"></span>              
+                </button>
+            </div>
+            <div class="core__box__item__text item-text">
+                <p>Working collaboratively with clients to achieve shared business goals and objectives, such as end-user satisfaction, Morrison Utility Services  bring commitment, innovation, teamwork and accountability to deliver long-term partnerships.</p> 
+                <p>Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis id suscipit eget, efficitur ut dolor. Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+           </div>
+           <div class="core__box__item core-item">
+            <div class="core__box__item__title item-title">
+                <h4>Gas</h4>
+                <button class="coreBtns">
+                    <span class="plus"></span>
+                    <span class="minus up"></span>              
+                </button>
+            </div>
+            <div class="core__box__item__text item-text">
+                <p>Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis id suscipit eget, efficitur ut dolor. Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> 
+                <p>Working collaboratively with clients to achieve shared business goals and objectives, such as end-user satisfaction.</p>
+            </div>
+           </div>
+           <div class="core__box__item core-item">
+            <div class="core__box__item__title item-title">
+                <h4>Electricity</h4>
+                <button class="coreBtns">
+                    <span class="plus"></span>
+                    <span class="minus up"></span>             
+                </button>
+            </div>
+            <div class="core__box__item__text item-text">
+                <p>Working collaboratively with clients to achieve shared business goals and objectives, such as end-user satisfaction, Morrison Utility Services  bring commitment, innovation, teamwork and accountability to deliver long-term partnerships.</p> 
+                <p>Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis id suscipit eget, efficitur ut dolor. Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+           </div>
+           <div class="core__box__item core-item">
+            <div class="core__box__item__title item-title">
+                <h4>Smart Metering</h4>
+                <button class="coreBtns">
+                    <span class="plus"></span>
+                    <span class="minus up"></span>         
+                </button>
+            </div>
+            <div class="core__box__item__text item-text">
+                <p>Working collaboratively with clients to achieve shared business goals and objectives, such as end-user satisfaction, Morrison Utility Services  bring commitment, innovation, teamwork and accountability to deliver long-term partnerships.</p> 
+                <p>Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis id suscipit eget, efficitur ut dolor. Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+           </div>
+           <div class="core__box__item core-item">
+            <div class="core__box__item__title item-title">
+                <h4>Energy Projects</h4>
+                <button class="coreBtns">
+                    <span class="plus"></span>
+                    <span class="minus up"></span>               
+                </button>
+            </div>
+            <div class="core__box__item__text item-text">
+                <p>Working collaboratively with clients to achieve shared business goals and objectives, such as end-user satisfaction, Morrison Utility Services  bring commitment, innovation, teamwork and accountability to deliver long-term partnerships.</p> 
+                <p>Proin dapibus dignissim erat et fermentum. Duis odio eros, lobortis id suscipit eget, efficitur ut dolor. Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus convallis semper lacus, sit amet molestie libero. Duis tempus bibendum nisi, vulputate semper erat malesuada sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+           </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact__box">
+        <h2 class="pe-title pe-title--blue pe-title--center">Contact us</h2>
+        <form class="contact__forma">
+            <div class="contact__inputs">
+                <div class="contact__input">
+                    <label for="first">Your first name*</label>
+                    <input type="text" id="first" class="frist" placeholder="Enter your first name..." required>
+                </div>
+                <div class="contact__input">
+                    <label for="last">Your last name*</label>
+                    <input type="text" id="last" class="last" placeholder="Enter your last name..." required>
+                </div>
+                <div class="contact__input">
+                    <label for="email">Your email address*</label>
+                    <input type="email" id="email" placeholder="Enter your email address..." required>
+                </div>
+                <div class="contact__input">
+                    <label for="subject">Your subject*</label>
+                    <input type="text" id="subject" placeholder="Enter your Subject..." required>
+                </div>
+            </div>
+            <label class="contact__message" for="msg">Your message*</label>
+            <textarea name="msg" class="contact__textarea" id="msg" cols="30" rows="10" placeholder="Enter your message..." required></textarea>
+            <p class="contact__p">*Required fields</p>
+            <button type="submit" class="btn btn--arrow btn--md-right">Submit</button>
+        </form>
+    </div>
+    </section>
+    <section class="footer">
+        <div class="footer__line">
+            <div class="footer__logo">
+                <img src="./styles/img/logo.png" alt="">
+            </div>
+            <div class="joker">
+                <a href="https://twitter.com/"><span class="twitter"></span></a>
+                <a href="https://www.linkedin.com/"><span class="linkedin"></span></a>
+                <a href="https://www.facebook.com/"><span class="facebook"></span></a>
+            </div>
+            <div class="footer__content">
+                <div class="footer__content__social-icon">
+                    <a href="https://twitter.com/"><span class="twitter"></span></a>
+                    <a href="https://www.linkedin.com/"><span class="linkedin"></span></a>
+                    <a href="https://www.facebook.com/"><span class="facebook"></span></a>
+                </div>
+                <div class="footer__content__links">
+                    <a href="#">Cookies</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__sub">
+            <p>2022 © ProEnergy. Registered in Serbia. Registered Office: Novosadskog sajma 2, Novi Sad.</p>
+        </div>
+    </section>
+
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

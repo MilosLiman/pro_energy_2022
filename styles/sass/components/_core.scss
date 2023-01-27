@@ -1,0 +1,84 @@
+@import '../abstracts/center';
+@import 'breakpoints';
+@import 'btn';
+
+
+.core{
+    padding: 4rem 2rem;
+
+    &__box{
+            border-top: 2px solid $dark_silver;
+            margin-top: 2rem;
+
+        &__item{
+            border-bottom: 2px solid $dark_silver;
+
+
+            &__title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+
+
+                h4{
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    padding: 1rem;
+                }
+
+                .coreBtns{
+                    cursor: pointer;
+
+                    .up{
+                        display: none;
+                    }
+
+                    .hidde{
+                        display: none;
+                    }
+
+                    .show{
+                        display: block;
+                    }
+                }
+            }
+
+            &__text{
+                background: $silver;
+                padding: 2rem 1rem;
+                display: none;
+                border-top: 1px solid $dark_silver;
+                transition: height .2s ease-out;
+
+
+                p{
+                    font-size: 1.6rem;
+                    color: $light_gray;
+
+                    &:first-child{
+                        padding-bottom: 1rem;
+                    }
+                }
+            }
+
+            .show-text{
+                display: block;
+            }
+        }
+    }
+
+    @include lg{
+
+        &__box{
+            margin: 2rem 25rem;
+        }
+    }
+
+    @include xl{
+
+        &__box{
+            margin: 3rem 48rem;
+        }
+    }
+}

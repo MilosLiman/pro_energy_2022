@@ -1,0 +1,302 @@
+@import '../abstracts/center';
+@import 'breakpoints';
+@import 'btn';
+@import 'shapes';
+
+.feedbacks{
+    background: $brick;
+
+    display: flex;
+    flex-direction: column;
+
+    &__content{
+        padding: 4rem 2rem;
+
+
+        h2{
+            color: $white;
+            line-height: 3.7rem;
+        }
+
+        h4{
+            color: $white;
+        }
+    }
+
+    &__quote-box{
+        background: $white;
+        margin: 0 2rem 4rem 2rem;
+        padding: 3rem;
+        box-shadow: 0px .5rem 2.5rem rgba(0, 0, 0, 0.35);
+        
+        &__quote{
+
+            .q{
+                width: 3rem;
+                height: 4rem;
+                object-fit: cover;
+            }
+
+            &__left{
+                padding-bottom: 1rem;
+            }
+
+            &__right{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding-top: 1rem;
+            }
+
+            &__main{
+
+                .quote-text{
+
+                    h3{
+                        color: $light_gray;
+                    }
+                }
+            }
+
+            .quote-text2{
+                display: none;
+            }
+
+            .quote-text3{
+                display: none;
+            }
+        }
+    }
+
+    &__customer-box{
+        display: flex;
+        padding-top: 1.6rem;
+
+        .active{
+            display: flex;
+        }
+
+        .customerImg{
+            border-radius: 50%;
+            width: 8rem;
+            height: 8rem;
+        }
+        
+        &__content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 1rem;
+
+            p{
+                font-size: 1.6rem;
+                line-height: 2rem;
+                font-weight: 400;
+                
+                span{
+                    font-weight: 600;
+                }
+            }
+
+
+        }
+    }
+
+    &__box-slider{
+        @include center(center);
+        padding-top: 2rem;
+
+        .left-arrow{
+            font-size: 4rem;
+            color: $teal;
+            padding-right: 2rem;
+            cursor: pointer;
+        }
+
+        .right-arrow{
+            font-size: 4rem;
+            color: $teal;
+            padding-left: 2rem;
+            cursor: pointer;
+
+        }
+
+        .inactive-a{
+            opacity: .5;
+        }
+
+        .active-a{
+            opacity: 1;
+        }
+
+        &__circles-box{
+            display: flex;
+            align-items: center;
+            
+            .bullet{
+                margin: 0 1rem;
+            }
+
+            .active{
+                fill: $red;
+                opacity: 1;
+            }
+
+            .active-svg{
+                width: 29px;
+                height: 29px;
+            }
+        }
+    }
+
+    @include sm{
+        &__content{
+    
+            h2{
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+    
+            h4{
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+
+            }
+            
+        }
+    
+        &__quote-box{
+            padding: 5rem 4rem;
+            height: 50rem;
+            
+            &__quote{
+    
+                .q{
+                    width: 3.7rem;
+                    height: 4.9rem;
+                }
+    
+                &__quote-main{
+    
+                    .quote-text{
+    
+                        h3{
+                            font-size: 2.6rem;
+                            line-height: 4rem;
+                        }
+                    }
+                }
+            }
+        }
+    
+        &__customer-box{
+            padding-top: 2rem;
+
+    
+            .customerImg{
+                width: 8.7rem;
+                height: 8.7rem;
+            }
+            
+            &__content{
+    
+                p{
+                    line-height: 2.7rem;
+                }
+    
+    
+            }
+        }
+    
+        &__box-slider{
+            padding-top: 2rem;
+            justify-content: start;
+    
+            .left-arrow{
+                padding-right: 1rem;
+            }
+    
+            .right-arrow{
+                padding-left: 1rem;
+            }
+        }
+    }
+
+    &__circles-box{
+
+        i{
+            margin: 0 .5rem;
+        }
+    }
+
+    @include md{
+
+        &__content{
+            padding: 4rem 2rem;
+        }
+
+        &__left{
+            padding-bottom: 1.5rem;
+        }
+
+        &__right{
+            padding-top: 1.5rem;
+        }
+
+        &__box-slider{
+            padding-top: 4rem;    
+        }
+    }
+
+    @include xl{
+
+        &__container{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            padding: 7rem 23rem;
+        }
+
+        &__content{
+            padding-right: 4rem;
+    
+            h2{
+                font-size: 4.6rem;
+                line-height: 5.7rem;
+            }
+    
+            h4{
+                font-size: 1.8rem;
+                line-height: 2.8rem;
+
+            }
+            
+        }
+
+        &__quote-box{
+            margin: 0;
+            padding: 3rem;
+            min-width: 60rem;
+            min-height: 50rem;
+
+            &__quote{
+                &__quote-main{
+                    .quote-text{
+    
+                        h3{
+                            font-size: 2.8rem;
+                            line-height: 4.2rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__box-slider{
+            padding-top: 5.6rem;
+            justify-content: center;
+    
+        }
+    }
+}
+

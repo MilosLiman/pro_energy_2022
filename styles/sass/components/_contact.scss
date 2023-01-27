@@ -1,0 +1,122 @@
+@import '../abstracts/center';
+@import 'breakpoints';
+@import 'btn';
+
+.contact{
+    background: $silver;
+    padding: 4rem 2rem;
+
+    &__forma{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__inputs{
+        padding-top: 3rem;
+    }
+
+    &__input{
+            display: flex;
+            flex-direction: column;
+
+        label{
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color: $black;
+            margin-bottom: .5rem;
+        }
+
+
+        input{
+            border-radius: 1rem;
+            border: 1px solid $light_gray;
+            padding: 1.5rem 1rem;
+            margin-bottom: 2rem;
+
+            &:focus{
+                outline-color: $blue;
+            }
+
+            &:focus::placeholder{
+                color: transparent;
+            }
+
+            &::placeholder{
+                font-size: 1.6rem;
+                color: $light_gray;
+            }
+        }
+    }
+
+    &__message{
+            font-size: 1.6rem;
+            line-height: 2rem;
+            color: $black;
+            margin-bottom: .5rem;
+        }
+
+    &__textarea{
+            border-radius: 1rem;
+            border: 1px solid $light_gray;
+            padding: 1.5rem 1rem;
+            
+
+            &:focus{
+                outline-color: $blue;
+            }
+
+            &::placeholder{
+                font-size: 1.6rem;
+                color: $light_gray;
+            }
+
+            &:focus::placeholder{
+                color: transparent;
+            }
+        }
+
+
+        
+    &__p{
+        font-size: 1.6rem;
+        padding: 2rem 0;
+        color: $light_gray;
+    }
+
+
+    @include sm{
+
+        &__forma{
+            position: relative;
+        }
+
+        &__inputs{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+        }
+
+        &__input{
+                display: flex;
+                flex-direction: column;
+
+            input{
+                padding: 1.5rem 2rem;
+            }
+        }
+
+        &__textarea{
+            padding: 1.5rem 2rem;
+        }
+
+    }
+    
+
+    @include lg{
+
+        &__box{
+           margin: 0 23rem;
+
+        }
+    }
+}
